@@ -18,11 +18,14 @@ jobs:
           yarn install
           yarn run build
 
-      - name: Deploy to github pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
-        with:
-          branch: gh-pages
-          folder: dist
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with: 
+          path: "./dist"
 
       - name: Publish deployed code 
         uses: actions/upload-artifact@v2
