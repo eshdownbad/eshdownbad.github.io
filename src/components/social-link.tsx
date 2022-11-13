@@ -16,7 +16,7 @@ export const SocialLink: FunctionComponent<ISocialLinkProps> = ({
         class="flex flex-row w-full p-3 items-center justify-center text-2xl hover:bg-white hover:text-black duration-300 hover:translate-x-2 hover:translate-y-[-0.5rem]"
       >
         <span class="pr-1 pt-1">{icon}</span>
-        <span>{site}</span>
+        <span class="flex-1 text-center">{site}</span>
       </a>
     </article>
   );
