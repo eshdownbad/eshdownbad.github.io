@@ -12,7 +12,6 @@ export function App() {
           ))}
         </section>
       </div>
-      <h1>hello test!</h1>
     </main>
   );
 }
