@@ -1,7 +1,3 @@
 # eshdownbad.github.io
 
-Work in progress
-
-TODO
-
-- add more styles & animation
+A simple site to show all my social links written in preact & typescript using tailwindcss
