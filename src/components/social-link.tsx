@@ -1,18 +1,21 @@
 import { FunctionComponent, JSX } from "preact";
-import { ISocialLinkData } from "../links";
+import { ISocialLinkData } from "./links";
 
-interface ISocialLinkProps extends ISocialLinkData {}
+type ISocialLinkProps = ISocialLinkData & {
+  onClick?: (ev: JSX.TargetedMouseEvent<HTMLAnchorElement>) => void;
+};
 
-export const SocialLink: FunctionComponent<ISocialLinkProps> = ({
-  logo: icon,
-  site,
-  link,
-}) => {
+export const SocialLink: FunctionComponent<ISocialLinkProps> = (props) => {
+  const { icon, site } = props;
   return (
     <article class="w-full mx-auto border m-4">
       <a
-        href={link}
-        target="_blank"
+        href={props.link || "javascript:void(0)"}
+        onClick={(ev) => {
+          if (typeof props.onClick === "function") {
+            props.onClick(ev);
+          }
+        }}
         class="flex flex-row w-full p-3 items-center justify-center text-2xl hover:bg-white hover:text-black duration-300 hover:translate-x-2 hover:translate-y-[-0.5rem]"
       >
         <span class="pr-1 pt-1">{icon}</span>
