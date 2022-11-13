@@ -41,12 +41,14 @@ export const Links = () => {
       {LINKS.map((link) => (
         <SocialLink {...link}></SocialLink>
       ))}
-      <SocialLink
-        site="Share"
-        icon={<ShareIcon></ShareIcon>}
-        link=""
-        onClick={() => navigator.share({ url: window.location.href })}
-      ></SocialLink>
+      {"share" in navigator ? (
+        <SocialLink
+          site="Share"
+          icon={<ShareIcon></ShareIcon>}
+          link=""
+          onClick={() => navigator.share({ url: window.location.href })}
+        ></SocialLink>
+      ) : null}
     </section>
   );
 };
