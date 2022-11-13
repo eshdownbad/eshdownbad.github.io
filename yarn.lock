@@ -1421,6 +1421,7 @@ __metadata:
     autoprefixer: ^10.4.13
     postcss: ^8.4.19
     preact: ^10.11.2
+    prettier: ^2.7.1
     tailwindcss: ^3.2.4
     typescript: ^4.6.4
     unplugin-icons: ^0.14.13
@@ -2406,6 +2407,15 @@ __metadata:
   version: 10.11.2
   resolution: "preact@npm:10.11.2"
   checksum: 92b4087a4048595e43fc5c005e9a1f3c890ec83657689de9b40b1894e26f8c2b6b071c63e08941a44044d1612532f8313483b62e3d6e1aa3c39bde27614ed790
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.7.1":
+  version: 2.7.1
+  resolution: "prettier@npm:2.7.1"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 55a4409182260866ab31284d929b3cb961e5fdb91fe0d2e099dac92eaecec890f36e524b4c19e6ceae839c99c6d7195817579cdffc8e2c80da0cb794463a748b
   languageName: node
   linkType: hard
 
