@@ -13,8 +13,7 @@ export const SocialLink: FunctionComponent<ISocialLinkProps> = props => {
         'w-full mx-auto rounded-xl m-4 ' + (props.backgroundAccent || 'border')
       }>
       <a
-        target='_blank'
-        {...(props.link ? { href: props.link } : {})}
+        {...(props.link ? { href: props.link, target: '_blank' } : {})}
         onClick={ev => {
           if (typeof props.onClick === 'function') {
             props.onClick(ev);
