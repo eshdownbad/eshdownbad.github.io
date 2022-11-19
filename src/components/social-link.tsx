@@ -6,7 +6,7 @@ type ISocialLinkProps = ISocialLinkData & {
 };
 
 export const SocialLink: FunctionComponent<ISocialLinkProps> = props => {
-  const { icon, site } = props;
+  const { icon, title } = props;
   return (
     <article
       class={
@@ -21,7 +21,7 @@ export const SocialLink: FunctionComponent<ISocialLinkProps> = props => {
         }}
         class='flex bg-black border rounded-xl flex-row w-full p-3 items-center justify-center text-2xl hover:bg-white hover:text-black duration-300 hover:translate-x-2 hover:translate-y-[-0.5rem]'>
         <span class='pr-1 pt-1'>{icon}</span>
-        <span class='flex-1 text-center'>{site}</span>
+        <span class='flex-1 text-center'>{title}</span>
       </a>
     </article>
   );
