@@ -13,6 +13,7 @@ export interface ISocialLinkData {
   title: string;
   link: string;
   backgroundAccent?: string;
+  subtitle?: string;
 }
 
 export const LINKS: ISocialLinkData[] = [
@@ -45,6 +46,7 @@ export const LINKS: ISocialLinkData[] = [
     link: 'https://discord.gg/khnKxXJRtE',
     icon: <DiscordIcon />,
     backgroundAccent: 'bg-indigo-700',
+    subtitle: 'its dead, join if you want to send me a friend request :)',
   },
 ];
 
