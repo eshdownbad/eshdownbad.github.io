@@ -4,6 +4,7 @@ import TwitchIcon from '~icons/akar-icons/twitch-fill';
 import GithubIcon from '~icons/akar-icons/github-fill';
 import ShareIcon from '~icons/akar-icons/share-box';
 import DiscordIcon from '~icons/akar-icons/discord-fill';
+import SpotifyIcon from '~icons/akar-icons/spotify-fill';
 
 import { JSX } from 'preact';
 import { SocialLink } from './social-link';
@@ -48,6 +49,13 @@ export const LINKS: ISocialLinkData[] = [
     backgroundAccent: 'bg-indigo-700',
     subtitle: 'its dead, join if you want to send me a friend request :)',
   },
+  {
+    title: 'Spotify',
+    link: 'https://open.spotify.com/user/uc6uqvpz6winym2qkiep4y0vd',
+    icon: <SpotifyIcon />,
+    backgroundAccent: 'bg-green-500',
+    subtitle: 'its dead, join if you want to send me a friend request :)',
+  },
 ];
 
 export const Links = () => {
@@ -61,7 +69,7 @@ export const Links = () => {
           title='Share'
           icon={<ShareIcon></ShareIcon>}
           link=''
-          backgroundAccent='bg-emerald-300'
+          backgroundAccent='bg-sky-300'
           onClick={() => navigator.share({ url: window.location.href })}
         />
       ) : null}
