@@ -54,7 +54,6 @@ export const LINKS: ISocialLinkData[] = [
     link: 'https://open.spotify.com/user/uc6uqvpz6winym2qkiep4y0vd',
     icon: <SpotifyIcon />,
     backgroundAccent: 'bg-green-500',
-    subtitle: 'its dead, join if you want to send me a friend request :)',
   },
 ];
 
