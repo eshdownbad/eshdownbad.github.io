@@ -1,7 +1,7 @@
 import { Background } from './components/background';
 import { GithubCorner } from './components/GithubCorner';
 import { Links } from './components/Links';
-import { Title } from './components/title';
+import { Title } from './components/Title';
 import { LINKS } from './data';
 
 export function App() {
