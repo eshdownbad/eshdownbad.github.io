@@ -1,8 +1,8 @@
-import { FunctionComponent } from 'preact';
+import { FunctionalComponent } from 'preact';
 
-export const Title: FunctionComponent = () => {
+export const Title: FunctionalComponent = () => {
   return (
-    <h1 class='font-bold text-3xl md:text-5xl lg:text-8xl relative'>
+    <h1 class='relative mb-3 text-6xl font-bold text-white lg:text-8xl'>
       <span>EshDownBad</span>
     </h1>
   );

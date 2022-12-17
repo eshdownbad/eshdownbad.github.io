@@ -2,20 +2,9 @@ import InstaIcon from '~icons/akar-icons/instagram-fill';
 import TwitterIcon from '~icons/akar-icons/twitter-fill';
 import TwitchIcon from '~icons/akar-icons/twitch-fill';
 import GithubIcon from '~icons/akar-icons/github-fill';
-import ShareIcon from '~icons/akar-icons/share-box';
 import DiscordIcon from '~icons/akar-icons/discord-fill';
 import SpotifyIcon from '~icons/akar-icons/spotify-fill';
-
-import { JSX } from 'preact';
-import { SocialLink } from './social-link';
-
-export interface ISocialLinkData {
-  icon: JSX.Element;
-  title: string;
-  link: string;
-  backgroundAccent?: string;
-  subtitle?: string;
-}
+import { ISocialLinkData } from './components/Links';
 
 export const LINKS: ISocialLinkData[] = [
   {
@@ -56,22 +45,3 @@ export const LINKS: ISocialLinkData[] = [
     backgroundAccent: 'bg-green-500',
   },
 ];
-
-export const Links = () => {
-  return (
-    <section class='w-full lg:w-2/3 '>
-      {LINKS.map(link => (
-        <SocialLink {...link}></SocialLink>
-      ))}
-      {'share' in navigator ? (
-        <SocialLink
-          title='Share'
-          icon={<ShareIcon></ShareIcon>}
-          link=''
-          backgroundAccent='bg-sky-300'
-          onClick={() => navigator.share({ url: window.location.href })}
-        />
-      ) : null}
-    </section>
-  );
-};

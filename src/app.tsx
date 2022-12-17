@@ -1,13 +1,20 @@
-import { Links } from './components/links';
+import { Background } from './components/background';
+import { GithubCorner } from './components/GithubCorner';
+import { Links } from './components/Links';
 import { Title } from './components/title';
+import { LINKS } from './data';
 
 export function App() {
   return (
-    <main class='flex flex-col items-center w-full p-1'>
-      <div class='flex flex-col items-center m-4 p-4 bg-black text-white w-full md:w-4/5 lg:w-3/5 rounded-3xl  border border-zinc-600'>
+    <>
+      <main class='flex h-screen w-screen flex-col items-center justify-center px-10'>
         <Title />
-        <Links />
-      </div>
-    </main>
+        <div class='flex w-full	flex-col items-center space-y-3 rounded-3xl border-2 border-white bg-black p-3 text-white lg:w-3/5 xl:w-2/5'>
+          <Links links={LINKS} />
+        </div>
+      </main>
+      <Background />
+      <GithubCorner href='https://github.com/eshdownbad/eshdownbad.github.io' />
+    </>
   );
 }
