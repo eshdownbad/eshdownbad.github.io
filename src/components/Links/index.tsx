@@ -3,15 +3,21 @@ import ShareIcon from '~icons/akar-icons/share-box';
 import { FunctionalComponent, JSX } from 'preact';
 import { SocialLink } from './SocialLink';
 
-export interface ISocialLinkData {
+export interface ISocialElement {
   icon: JSX.Element;
   title: string;
-  link: string;
   backgroundAccent?: string;
-  subtitle?: string;
 }
+export interface ISocialButton extends ISocialElement {
+  onClick: (ev: JSX.TargetedMouseEvent<HTMLElement>) => void;
+}
+export interface ISocialAnchor extends ISocialElement {
+  link: string;
+}
+
+export type ISocialLinkProps = ISocialAnchor | ISocialButton;
 export interface ILinksProps {
-  links: ISocialLinkData[];
+  links: ISocialLinkProps[];
 }
 
 export const Links: FunctionalComponent<ILinksProps> = ({ links }) => {

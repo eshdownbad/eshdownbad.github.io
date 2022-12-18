@@ -4,9 +4,10 @@ import TwitchIcon from '~icons/akar-icons/twitch-fill';
 import GithubIcon from '~icons/akar-icons/github-fill';
 import DiscordIcon from '~icons/akar-icons/discord-fill';
 import SpotifyIcon from '~icons/akar-icons/spotify-fill';
-import { ISocialLinkData } from './components/Links';
+import { ISocialLinkProps } from './components/Links';
+import { toggleDiscordPopup } from './components/DiscordPopup';
 
-export const LINKS: ISocialLinkData[] = [
+export const LINKS: ISocialLinkProps[] = [
   {
     title: 'Instagram',
     link: 'https://www.instagram.com/eshdownbad/',
@@ -30,13 +31,6 @@ export const LINKS: ISocialLinkData[] = [
     link: 'https://github.com/eshdownbad',
     icon: <GithubIcon />,
     backgroundAccent: 'bg-slate-400',
-  },
-  {
-    title: 'Discord Server',
-    link: 'https://discord.gg/khnKxXJRtE',
-    icon: <DiscordIcon />,
-    backgroundAccent: 'bg-indigo-700',
-    subtitle: 'its dead, join if you want to send me a friend request :)',
   },
   {
     title: 'Spotify',
