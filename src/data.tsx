@@ -2,10 +2,8 @@ import InstaIcon from '~icons/akar-icons/instagram-fill';
 import TwitterIcon from '~icons/akar-icons/twitter-fill';
 import TwitchIcon from '~icons/akar-icons/twitch-fill';
 import GithubIcon from '~icons/akar-icons/github-fill';
-import DiscordIcon from '~icons/akar-icons/discord-fill';
 import SpotifyIcon from '~icons/akar-icons/spotify-fill';
 import { ISocialLinkProps } from './components/Links';
-import { toggleDiscordPopup } from './components/DiscordPopup';
 
 export const LINKS: ISocialLinkProps[] = [
   {
