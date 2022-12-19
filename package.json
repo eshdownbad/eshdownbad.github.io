@@ -10,6 +10,7 @@
     "prettier": "prettier --write ."
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "preact": "^10.11.2"
   },
   "devDependencies": {

@@ -750,6 +750,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"animate.css@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "animate.css@npm:4.1.1"
+  checksum: c7eb91540423532c549725a6dedea993735a05eadaa49ed4d1965ce166a6db36459adcc9667c1dfe13657fab92a2875bbee34ad0d942444a731badab69f762c8
+  languageName: node
+  linkType: hard
+
 "ansi-regex@npm:^5.0.1":
   version: 5.0.1
   resolution: "ansi-regex@npm:5.0.1"
@@ -1418,6 +1425,7 @@ __metadata:
     "@iconify/json": ^2.1.136
     "@preact/preset-vite": ^2.4.0
     "@svgr/core": ^6.5.1
+    animate.css: ^4.1.1
     autoprefixer: ^10.4.13
     postcss: ^8.4.19
     preact: ^10.11.2
