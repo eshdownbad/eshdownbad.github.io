@@ -3,6 +3,7 @@ import TwitterIcon from '~icons/akar-icons/twitter-fill';
 import TwitchIcon from '~icons/akar-icons/twitch-fill';
 import GithubIcon from '~icons/akar-icons/github-fill';
 import SpotifyIcon from '~icons/akar-icons/spotify-fill';
+import RedditIcon from '~icons/mdi/reddit';
 import { ISocialLinkProps } from './components/Links';
 
 export const LINKS: ISocialLinkProps[] = [
@@ -35,5 +36,11 @@ export const LINKS: ISocialLinkProps[] = [
     link: 'https://open.spotify.com/user/uc6uqvpz6winym2qkiep4y0vd',
     icon: <SpotifyIcon />,
     backgroundAccent: 'bg-green-500',
+  },
+  {
+    title: 'Reddit',
+    link: 'https://www.reddit.com/user/eshdownbad',
+    icon: <RedditIcon />,
+    backgroundAccent: 'bg-orange-500',
   },
 ];
